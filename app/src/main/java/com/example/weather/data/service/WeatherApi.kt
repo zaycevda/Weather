@@ -1,5 +1,6 @@
 package com.example.weather.data.service
 
+import com.example.weather.BuildConfig
 import com.example.weather.data.models.CoordinatesModel
 import com.example.weather.data.models.CurrentWeatherModel
 import com.example.weather.data.models.ForecastWeatherModel
@@ -25,6 +26,6 @@ interface WeatherApi {
 
     companion object {
         const val BASE_URL = "https://api.openweathermap.org/"
-        const val API_KEY = "b9dd1a63832200fe31071339aab15ffb"
+        const val API_KEY = BuildConfig.API_KEY
     }
 }
